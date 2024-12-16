@@ -24,12 +24,14 @@ document.getElementById("fecha").innerText = fechaFormateada =
   fechaFormateada.charAt(0).toUpperCase() + fechaFormateada.slice(1);
 //=========================================================================
 document.getElementById("anadir-tarea-btn").addEventListener("click", () => {
-  const tareaID = crypto.randomUUID();
-  let plantilla = `<li class="la-tarea" id="tarea-${tareaID}">${
-    document.getElementById("tarea").value
-  }</li>`;
-  localStorage.setItem(`tarea-${tareaID}`, plantilla);
-  window.location.reload();
+  if (document.getElementById("tarea").value !== "") {
+    const tareaID = crypto.randomUUID();
+    let plantilla = `<li class="la-tarea" id="tarea-${tareaID}">${
+      document.getElementById("tarea").value
+    }</li>`;
+    localStorage.setItem(`tarea-${tareaID}`, plantilla);
+    window.location.reload();
+  }
 });
 //=========================================================================
 document.getElementById("borrar-todo").addEventListener("click", () => {

@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  color: #292929;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Teachers', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+  background: url("../image/1336125-2863307312.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+#bartop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: #292929;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  z-index: 1;
+}
+#bartop #fecha,
+#bartop #derechos {
+  color: #FFFF;
+}
+#app {
+  padding: 6px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 42px;
+  border-radius: 5px;
+}
+#app #app-center {
+  text-align: left;
+  width: 920px;
+  margin: 0 auto;
+  padding: 8px 4px 8px 4px;
+  margin-bottom: 32px;
+}
+#app #app-center a > h1 {
+  font-size: 72px;
+}
+#app #app-center span {
+  font-size: 20px;
+}
+#app #app-principal {
+  width: 920px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+#app #app-principal #anadir-tarea > h2 {
+  font-weight: 600;
+}
+#app #app-principal #anadir-tarea-btn {
+  padding: 8px;
+  cursor: pointer;
+  background: #3899dd;
+  background: -moz-linear-gradient(360deg,#3899dd 35%,#72c2e6 100%);
+  background: -webkit-linear-gradient(360deg,#3899dd 35%,#72c2e6 100%);
+  background: linear-gradient(360deg,#3899dd 35%,#72c2e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3899dd",endColorstr="#72c2e6",GradientType=1);
+  color: whitesmoke;
+  border-radius: 4px;
+  width: 80px;
+  border: 1px solid #292929;
+  transition: background .2s ease-in-out;
+}
+#app #app-principal #anadir-tarea-btn:hover {
+  background-color: #ae4c4c;
+  transition: background .2s ease-in-out;
+}
+#app #app-principal #tarea {
+  width: 365px;
+  padding: 8px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #292929;
+  background: #dedede;
+  background: -moz-linear-gradient(360deg,#dedede 35%,#ffffff 100%);
+  background: -webkit-linear-gradient(360deg,#dedede 35%,#ffffff 100%);
+  background: linear-gradient(360deg,#dedede 35%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dedede",endColorstr="#ffffff",GradientType=1);
+}
+#app #app-principal #contenedor-tareas {
+  border: 1px solid #292929;
+  width: 450px;
+  background-color: #FFFF;
+  margin-top: 12px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  max-height: 160px;
+}
+#lista-tareas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 160px;
+  overflow-y: scroll;
+}
+#borrar-todo {
+  padding: 8px;
+  color: #FFFF;
+  border: 1px solid #292929;
+  width: 450px;
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+  cursor: pointer;
+  background: #961f1f;
+  background: -moz-linear-gradient(360deg,#961f1f 35%,#d72d2d 100%);
+  background: -webkit-linear-gradient(360deg,#961f1f 35%,#d72d2d 100%);
+  background: linear-gradient(360deg,#961f1f 35%,#d72d2d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#961f1f",endColorstr="#d72d2d",GradientType=1);
+}
+.la-tarea {
+  padding: 12px;
+  transition: background 0.2s ease-in-out;
+}
+.la-tarea:hover {
+  transition: background 0.2s ease-in-out;
+  background-color: #E6E6FA;
+  cursor: pointer;
+}

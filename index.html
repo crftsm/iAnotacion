@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="crftsm" />
+    <meta name="keywords" content="anotación, webpage, notes, tareas, todoapp, javascript, notepad" />
+    <meta name="description" content="Una sola página web que permite al usuario escribir su tareas y almazenar en el navegador de Internet." />
+    <link rel="shortcut icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.iconfinder.com%2Fdata%2Ficons%2Fhawcons%2F32%2F700118-icon-20-clouds-1024.png&f=1&nofb=1&ipt=28f47df372521e2b5309e935a2f083dc15d2458f8c5dc5dfdfac985851460cb8&ipo=images" type="image/png">
+    <title>iAnotación</title>
+    <link rel="stylesheet" type="text/css" href="./src/style/web.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="bartop">
+        <p id="fecha"></p>
+        <p id="derechos">Creado por crftsm &copy; 2024</p>
+    </nav>
+    <div id="app">
+        <div id="app-center">
+            <a href="./index.html" target="_self">
+                <h1>iAnotación</h1>
+            </a>
+            <p>¡Solamente una página para ayudarte a organizarte su tareas en día a día!</p>
+            <p><strong>¡Haga clic en una tarea para eliminarla! o mantén el mouse sobre él para editarlo.</strong></p>
+        </div>
+        <div id="app-principal">
+            <div id="anadir-tarea">
+                <h2>Añadir una tarea</h2>
+                <input type="text" name="tarea" id="tarea" placeholder="Ingresa el nombre de la carpeta que desea..." />
+                <button id="anadir-tarea-btn">Crear</button>
+            </div>
+            <div id="contenedor-tareas">
+                <ul id="lista-tareas"></ul>
+            </div>
+            <button type="submit" id="borrar-todo">Borrar todo</button>
+        </div>
+    </div>
+    <script src="src/application.js" type="text/javascript" defer></script>
+</body>
+</html>
